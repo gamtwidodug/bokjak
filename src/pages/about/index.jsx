@@ -405,7 +405,7 @@ const HomePage = () => {
                       border: '2px solid #fff',
                     }}
                   >
-                    연 99,000원
+                    연 99,0원
                   </td>
                   최대 16% 할인된 가격
                 </td>
