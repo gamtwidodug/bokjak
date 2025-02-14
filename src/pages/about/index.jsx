@@ -336,47 +336,230 @@ const HomePage = () => {
             textAlign: 'center',
             display: 'inline-block',
             padding: '20px',
-
             borderRadius: '5px',
-            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
             width: '80%',
             maxWidth: '800px',
           }}
         >
-          <table style={{ width: '100%', backgroundColor: '#1d1d1d', color: 'white' }}>
+          <table
+            style={{
+              width: '100%',
+              color: 'white',
+              borderCollapse: 'collapse',
+            }}
+          >
             <thead>
               <tr>
-                <th style={{ padding: '10px', textAlign: 'center' }}>베이직</th>
-                <th style={{ padding: '10px', textAlign: 'center' }}>프리미엄</th>
+                <th
+                  colSpan="2"
+                  style={{
+                    padding: '20px',
+                    textAlign: 'center',
+                    backgroundColor: '#272727',
+                    borderBottom: '2px solid #fff',
+                    fontWeight: 'bold',
+                    fontSize: '1.2em',
+                  }}
+                >
+                  베이직
+                </th>
+                <th
+                  style={{
+                    padding: '20px',
+                    textAlign: 'center',
+                    backgroundColor: '#272727',
+                    borderBottom: '2px solid #fff',
+                    fontWeight: 'bold',
+                    fontSize: '1.2em',
+                  }}
+                >
+                  프리미엄
+                </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="py-4 px-6 text-center">연간 99,000원</td>
-                <td className="py-4 px-6 text-center">연간 139,000원</td>
-              </tr>
-              <tr>
-                <td className="py-4 px-6 text-center">최대 16% 할인된 가격</td>
-                <td className="py-4 px-6 text-center">최대 16% 할인된 가격</td>
-              </tr>
-              <tr>
-                <td className="py-4 px-6 text-center">최대 1080p Full HD</td>
-                <td className="py-4 px-6 text-center">최대 4K UHD & HDR</td>
-              </tr>
-              <tr>
-                <td className="py-4 px-6 text-center">최대 5.1 사운드</td>
-                <td className="py-4 px-6 text-center">최대 Dolby Atmos 오디오</td>
-              </tr>
-              <tr>
-                <td className="py-4 px-6 text-center">광고 없는 스트리밍</td>
-                <td className="py-4 px-6 text-center">광고 없는 스트리밍</td>
-              </tr>
-              <tr>
-                <td className="py-4 px-6 text-center">
-                  <span className="text-green-500"> 콘텐츠 저장 ✔</span>
+                <td
+                  style={{
+                    padding: '15px',
+                    textAlign: 'center',
+                    borderBottom: '2px solid #333',
+                    backgroundColor: '#1d1d1d',
+                  }}
+                >
+                  연간 구독료
                 </td>
-                <td className="py-4 px-6 text-center">
-                  <span className="text-green-500"> 콘텐츠 저장 ✔</span>
+
+                <td
+                  style={{
+                    padding: '15px',
+                    textAlign: 'center',
+                    borderBottom: '2px solid #333',
+                    backgroundColor: '#1d1d1d',
+                  }}
+                >
+                  <td
+                    style={{
+                      padding: '15px',
+                      textAlign: 'center',
+                      border: '2px solid #fff',
+                    }}
+                  >
+                    연 99,000원
+                  </td>
+                  최대 16% 할인된 가격
+                </td>
+                <td
+                  style={{
+                    padding: '15px',
+                    textAlign: 'center',
+                    borderBottom: '2px solid #333',
+                    backgroundColor: '#2e2e2e',
+                  }}
+                >
+                  <td
+                    style={{
+                      padding: '15px',
+                      textAlign: 'center',
+                      border: '2px solid #fff',
+                    }}
+                  >
+                    연 99,000원
+                  </td>
+                  최대 16% 할인된 가격
+                </td>
+              </tr>
+
+              <tr>
+                <td
+                  style={{
+                    padding: '15px',
+                    textAlign: 'center',
+                    borderBottom: '2px solid #333',
+                    backgroundColor: '#1d1d1d',
+                    fontWeight: 'bold',
+                  }}
+                >
+                  오디오
+                </td>
+                <td
+                  style={{
+                    padding: '15px',
+                    textAlign: 'center',
+                    borderBottom: '2px solid #333',
+                    backgroundColor: '#1d1d1d',
+                  }}
+                >
+                  최대 5.1 사운드
+                </td>
+                <td
+                  style={{
+                    padding: '15px',
+                    textAlign: 'center',
+                    borderBottom: '2px solid #333',
+                    backgroundColor: '#2e2e2e',
+                  }}
+                >
+                  최대 Dolby Atmos 오디오
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style={{
+                    padding: '15px',
+                    textAlign: 'center',
+                    borderBottom: '2px solid #333',
+                    backgroundColor: '#1d1d1d',
+                    fontWeight: 'bold',
+                  }}
+                >
+                  영상화질
+                </td>
+                <td
+                  style={{
+                    padding: '15px',
+                    textAlign: 'center',
+                    borderBottom: '2px solid #333',
+                    backgroundColor: '#1d1d1d',
+                  }}
+                >
+                  최대 1080p Full HD
+                </td>
+                <td
+                  style={{
+                    padding: '15px',
+                    textAlign: 'center',
+                    borderBottom: '2px solid #333',
+                    backgroundColor: '#2e2e2e',
+                  }}
+                >
+                  최대 4K UHD & HDR
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style={{
+                    padding: '15px',
+                    textAlign: 'center',
+                    borderBottom: '2px solid #333',
+                    backgroundColor: '#1d1d1d',
+                    fontWeight: 'bold',
+                  }}
+                >
+                  광고
+                </td>
+                <td
+                  style={{
+                    padding: '15px',
+                    textAlign: 'center',
+                    borderBottom: '2px solid #333',
+                    backgroundColor: '#1d1d1d',
+                  }}
+                >
+                  광고 없는 스트리밍
+                </td>
+                <td
+                  style={{
+                    padding: '15px',
+                    textAlign: 'center',
+                    borderBottom: '2px solid #333',
+                    backgroundColor: '#2e2e2e',
+                  }}
+                >
+                  광고 없는 스트리밍
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style={{
+                    padding: '15px',
+                    textAlign: 'center',
+
+                    backgroundColor: '#1d1d1d',
+                    fontWeight: 'bold',
+                  }}
+                >
+                  콘텐츠 저장
+                </td>
+                <td
+                  style={{
+                    padding: '15px',
+                    textAlign: 'center',
+
+                    backgroundColor: '#1d1d1d',
+                  }}
+                >
+                  <span>✔</span>
+                </td>
+                <td
+                  style={{
+                    padding: '15px',
+                    textAlign: 'center',
+
+                    backgroundColor: '#2e2e2e',
+                  }}
+                >
+                  <span>✔</span>
                 </td>
               </tr>
             </tbody>

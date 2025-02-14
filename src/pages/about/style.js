@@ -6,7 +6,7 @@ export const AboutWrap = styled.div`
   }
   width: 100%;
   .inner {
-    padding: 100px 0;
+    padding: 0;
   }
 
   body {
@@ -36,7 +36,12 @@ export const AboutWrap = styled.div`
   @media (max-width: 390px) {
     /* 모바일 크기 */
     h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
       font-size: large;
+      padding-left: 15%;
     }
   }
 
